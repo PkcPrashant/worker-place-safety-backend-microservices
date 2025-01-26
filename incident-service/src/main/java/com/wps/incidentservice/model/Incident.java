@@ -1,4 +1,4 @@
-package com.wps.alertservice.model;
+package com.wps.incidentservice.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,11 +16,10 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Alert {
+public class Incident {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String type;
     private Double lat;
     private Double lng;
     private LocalDateTime createdAt;

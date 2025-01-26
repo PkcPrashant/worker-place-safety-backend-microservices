@@ -19,6 +19,8 @@ public class AlertService {
     public Alert createAlert(CreateAlertRequest createAlertRequest) {
         Alert alert = Alert.builder()
                 .type(createAlertRequest.getType())
+                .lat(createAlertRequest.getLat())
+                .lng(createAlertRequest.getLng())
                 .createdAt(LocalDateTime.now())
                 .build();
         return alertRepository.save(alert);

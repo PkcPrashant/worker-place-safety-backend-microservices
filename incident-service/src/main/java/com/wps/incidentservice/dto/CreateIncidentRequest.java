@@ -1,4 +1,4 @@
-package com.wps.alertservice.dto;
+package com.wps.incidentservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateAlertRequest {
-    private String type;
+public class CreateIncidentRequest {
     private Double lat;
     private Double lng;
 }
